@@ -34,7 +34,7 @@ const buscarRepos = async () => {
     res.innerHTML = '<span>carrengado, aguarde...<span>'
     const response = await fetch(`https://api.github.com/users/${input.value}`)
     const data = await response.json()
-    const values = new User("a-removebg-preview.PNG", data.avatar_url, data.login, data.followers, data.following, data.public_repos, data.company, data.location)
+    const values = new User("./githubImage.PNG", data.avatar_url, data.login, data.followers, data.following, data.public_repos, data.company, data.location)
 
     if (data.login == undefined) {
         res.innerHTML = '<span>!!Usuário não encontrado!!<span>'

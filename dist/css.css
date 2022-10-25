@@ -48,8 +48,10 @@ button:active {
 }
 
 .card {
+    padding: 10px;
     position: relative;
     width: 350px;
+    max-width: 340px;
     height: 450px;
     display: flex;
     justify-content: center;
@@ -111,8 +113,8 @@ button:active {
 #res img {
     border: 10px solid rgb(37, 0, 71);
     position: absolute;
-    left: 80px;
-    top: -100px;
+    left: 40px;
+    top: -90px;
     width: 250px;
     border-radius: 50%;
 }
