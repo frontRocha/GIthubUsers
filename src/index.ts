@@ -20,13 +20,12 @@ class User implements inital {
             <img src='${this.githubImg}'/>
             <h3>${this.name}</h3>
         </div>
-       
         <div class='bottom'> 
-        <img src="${this.img}"/>
+         <img src="${this.img}"/>
             <p>seguidores: ${this.followers}<p>
             <p>seguindo: ${this.repo}</p>
-            <p>empresa: ${this.company}</p>
-            <p>localidade: ${this.place}</p>
+            <p>empresa: ${!this.company ? 'não informado' : this.company}</p>
+            <p>localidade: ${!this.place ? 'não informado' : this.place}</p>
         </div>`
     }
 }
