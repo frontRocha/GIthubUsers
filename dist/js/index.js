@@ -45,7 +45,7 @@ const buscarRepos = () => __awaiter(void 0, void 0, void 0, function* () {
     if (data.login == undefined) {
         res.innerHTML = '<span>!!Usuário não encontrado!!<span>';
         setTimeout(() => {
-            res.innerHTML = '';
+            res.innerHTML = 'carregando, aguarde...';
         }, 3000);
         return;
     }

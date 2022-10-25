@@ -39,7 +39,7 @@ const buscarRepos = async () => {
     if (data.login == undefined) {
         res.innerHTML = '<span>!!Usuário não encontrado!!<span>'
         setTimeout(() => {
-            res.innerHTML = ''
+            res.innerHTML = 'carregando, aguarde...'
         }, 3000)
         return
     }
