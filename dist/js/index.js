@@ -41,7 +41,7 @@ const buscarRepos = () => __awaiter(void 0, void 0, void 0, function* () {
     res.innerHTML = '<span>carrengado, aguarde...<span>';
     const response = yield fetch(`https://api.github.com/users/${input.value}`);
     const data = yield response.json();
-    const values = new User("./githubImage.PNG", data.avatar_url, data.login, data.followers, data.following, data.public_repos, data.company, data.location);
+    const values = new User("https://raw.githubusercontent.com/estudantedehtml/GIthubUsers/master/dist/githubImage.png", data.avatar_url, data.login, data.followers, data.following, data.public_repos, data.company, data.location);
     if (data.login == undefined) {
         res.innerHTML = '<span>!!Usuário não encontrado!!<span>';
         setTimeout(() => {
