@@ -18,6 +18,7 @@ class User {
         this.name = name;
         this.followers = followers;
         this.following = following;
+        this.place = place;
         this.repo = repo;
         this.company = company;
         this.place = place;

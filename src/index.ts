@@ -2,17 +2,26 @@ let input = document.getElementById('input') as HTMLInputElement
 let button = document.getElementById('button')
 let res = document.getElementById('res') as HTMLDivElement
 
-interface inital {
+class User {
+    githubImg: string
     img: HTMLImageElement
     name: string
     followers: number
+    following: number
     repo: number
     company: string
     place: string
-}
-
-class User implements inital {
-    constructor(public githubImg: string, public img: HTMLImageElement, public name: string, public followers: number, public following: number, public repo: number, public company: string, public place: string) {}
+    constructor(githubImg: string, img: HTMLImageElement, name: string, followers: number, following: number, repo: number, company: string, place: string) {
+        this.githubImg = githubImg
+        this.img = img
+        this.name = name
+        this.followers = followers
+        this.following = following
+        this.place = place
+        this.repo = repo
+        this.company = company
+        this.place = place
+    }
 
     data() {
         return `
